@@ -21,6 +21,7 @@ let images = [
   "images/image20.jpg",
   "images/image21.jpg",
   "images/image22.jpg",
+  "images/image23.jpg",
   // Add more images here in the desired order
 ];
 
