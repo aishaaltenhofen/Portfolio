@@ -25,6 +25,12 @@ let images = [
   // Add more images here in the desired order
 ];
 
+let imageDescriptions = [
+  "<em>Confessions Projected</em>, 2023<br>Solo exhibition, XYZ Gallery, Berlin<br>Documentation: Alex Smith",
+  "<em>Pussy Got The Cream</em>, 2022<br>Group exhibition, ABC Space, London<br>Documentation: Maria Gomez",
+  "<em>The Archive Doesn’t Care</em>, 2021<br>Solo exhibition, Kunsthalle Bonn<br>Documentation: Tobias Rehm"
+];
+
 let currentIndex = 0;
 const slide = document.getElementById("slide");
 
