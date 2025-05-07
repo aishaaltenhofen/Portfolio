@@ -33,24 +33,32 @@ let imageDescriptions = [
   "<em>First Exposure</em>, 2024<br>Solo exhibition, Austin Space, Munich<br>Documentation: Julian Blum",
 ];
 
+let imageDescriptions = [
+  "<em>Confessions Projected</em>, 2023<br>Solo exhibition, XYZ Gallery, Berlin<br>Documentation: Alex Smith",
+  "<em>Pussy Got The Cream</em>, 2022<br>Group exhibition, ABC Space, London<br>Documentation: Maria Gomez",
+  "<em>The Archive Doesn’t Care</em>, 2021<br>Solo exhibition, Kunsthalle Bonn<br>Documentation: Tobias Rehm"
+];
+
 let currentIndex = 0;
-const slide = document.getElementById("slide");
 
 function showImage(index) {
-  if (index < 0) index = images.length - 1;
-  if (index >= images.length) index = 0;
-  currentIndex = index;
-  slide.src = images[currentIndex];
+  const slide = document.getElementById("slide");
+  const info = document.getElementById("imageInfo");
+
+  slide.src = images[index];
+  info.innerHTML = imageDescriptions[index];
 }
 
 function prevImage() {
-  showImage(currentIndex - 1);
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showImage(currentIndex);
 }
 
 function nextImage() {
-  showImage(currentIndex + 1);
+  currentIndex = (currentIndex + 1) % images.length;
+  showImage(currentIndex);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = function () {
   showImage(currentIndex);
-});
+};
