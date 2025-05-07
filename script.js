@@ -33,12 +33,6 @@ let imageDescriptions = [
   "<em>First Exposure</em>, 2024<br>Solo exhibition, Austin Space, Munich<br>Documentation: Julian Blum",
 ];
 
-let imageDescriptions = [
-  "<em>Confessions Projected</em>, 2023<br>Solo exhibition, XYZ Gallery, Berlin<br>Documentation: Alex Smith",
-  "<em>Pussy Got The Cream</em>, 2022<br>Group exhibition, ABC Space, London<br>Documentation: Maria Gomez",
-  "<em>The Archive Doesn’t Care</em>, 2021<br>Solo exhibition, Kunsthalle Bonn<br>Documentation: Tobias Rehm"
-];
-
 let currentIndex = 0;
 
 function showImage(index) {
