@@ -94,6 +94,20 @@
     .arrow.right {
       right: 10px;
     }
+
+    .image-info {
+      position: fixed;
+      bottom: 40px;
+      left: 20px;
+      width: 200px;
+      font-size: 14px;
+      line-height: 1.4;
+      font-style: normal;
+    }
+
+    .image-info em {
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -104,6 +118,7 @@
       <p>@aishaaltenhofen</p>
     </div>
     <div class="description">
+      Show title, location, year etc.
     </div>
   </div>
 
@@ -111,6 +126,12 @@
     <button class="arrow left" onclick="prevImage()">&#8592;</button>
     <img id="slide" src="images/image1.jpg" alt="Artwork" />
     <button class="arrow right" onclick="nextImage()">&#8594;</button>
+  </div>
+
+  <div class="image-info" id="imageInfo">
+    <em>Title</em>, Year<br>
+    Solo/ Group exhibition, Space, City<br>
+    Documentation: Name
   </div>
 
   <script src="script.js"></script>
