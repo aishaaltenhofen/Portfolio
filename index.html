@@ -13,15 +13,19 @@
       font-weight: 400;
       line-height: 1.6;
       color: black;
-      text-align: center;
       margin: 0;
       background: white;
     }
 
     .sidebar {
-      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
       padding: 40px 20px;
       box-sizing: border-box;
+      text-align: left;
     }
 
     .site-title {
@@ -36,7 +40,7 @@
     .contact-info a {
       font-size: 15px;
       font-weight: 500;
-      color: black;
+      color: blue;
       text-decoration: none;
     }
 
@@ -52,8 +56,9 @@
     }
 
     .slideshow {
-      margin: 40px auto;
-      max-width: 90%;
+      margin-left: 240px;
+      padding: 40px 20px;
+      max-width: calc(100% - 240px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -93,12 +98,13 @@
 </head>
 <body>
   <div class="sidebar">
-    <span class="site-title">Aisha Altenhofen</span>
+    <span class="site-title">AISHA ALTENHOFEN</span>
     <div class="contact-info">
-      <p><a href="mailto:aishaaltenhofen@gmail.com">aishaaltenhofen (at) gmail.com</a></p>
-      <p>**********</p>
+      <p><a href="mailto:aishaaltenhofen@gmail.com">aishaaltenhofen@gmail.com</a></p>
+      <p>@aishaaltenhofen</p>
     </div>
     <div class="description">
+      Show title, location, year etc.
     </div>
   </div>
 
@@ -111,4 +117,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
